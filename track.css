@@ -1,0 +1,54 @@
+.track{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.trackheading{
+    color: #505559;
+    margin-bottom: 2%;
+}
+
+.trackpara{
+    color: #D4D5D7;
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
+.trackparamobile,.trackheadingmobile{
+    display: none;
+}
+
+@media (max-width:500px) {
+    .track{
+        margin-top: 15%;
+    }
+    .trackpara,.trackheading{
+        display: none;
+    }
+    .trackheadingmobile{
+        display: block;
+        color: #505559;
+        margin-bottom: 2%;
+    }
+    .trackparamobile{
+        margin-top: 4%;
+        display: flex;
+        color: #D4D5D7;
+        font-weight: 600;
+        line-height: 1.6rem;
+    }
+   
+}
+
+@media (max-width:400px) {
+    .trackheadingmobile{
+        font-size: 18px;
+    }
+    .trackparamobile{
+        font-size: 14px;
+    }
+}

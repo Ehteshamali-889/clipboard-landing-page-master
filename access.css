@@ -1,0 +1,47 @@
+.access{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.accesss-heading{
+    color: #505559;
+    margin-bottom: 1%;
+}
+
+.accesspara{
+    color: #D4D5D7;
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
+.image-devices{
+    margin-top: 6%;
+}
+
+@media (max-width:500px) {
+    .image-devices{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .accesss-heading{
+        font-size: 24px;
+        width: 50%;
+    }
+
+    .accesspara{
+        padding-top: 2%;
+        font-size: 14px;
+        width: 80%;
+    }
+}
+
+@media (max-width:400px) {
+    .accesss-heading{
+        width: 70%;
+    }
+}

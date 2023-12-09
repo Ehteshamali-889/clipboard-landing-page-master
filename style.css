@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.mainheader{
+    background-size: cover;
+    background-image: url(./images/bg-header-desktop.png);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    padding-top: 10%;
+    margin-bottom: 2%;
+    max-width: 100%;
+    height: auto;
+}
+
+.historyheading{
+    color: #505559;
+}
+
+.mainpara{
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    color: #D4D5D7;
+    font-weight: 600;
+}
+
+.btngroup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
+.btndownload{
+    padding: 12px 16px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    width: 400px;
+    max-width: 19%;
+}
+
+.ios-btn{
+    background-color: var(--StrongCyan);
+    color: white;
+}
+
+.mac-btn{
+    background-color: var(--LightBlue);
+    color: white;
+}
+/* 
+#zoom-indicator {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+} */
+
+.historyheadingmobile,.mainparamobile{
+    display: none;
+}
+
+
+@media (max-width:500px) {
+    .mainheader{
+        text-align: center;
+        background-image: url(./images/bg-header-mobile.png);
+        padding-top: 10%;
+        height: 70vh;
+    }
+
+    .historyheading,.mainpara{
+        display: none;
+    }
+    .historyheadingmobile{
+        display: flex;
+        font-size: 24px;
+        color: #505559;
+    }
+
+    .mainparamobile{
+        display: flex;
+        text-align: center;
+        margin-bottom: 2%;
+        margin-top: 2%;
+        color: #D4D5D7;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
+    .btngroup{
+        margin-top: 5%;
+        flex-direction: column;
+    }
+
+    .btndownload{
+        margin-bottom: 5%;
+        max-width: 70%;
+        /* padding: 12px 16px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        width: 80%;
+        max-width: 19%; */
+    }
+}
+
+@media (max-width:400px) {
+    .btngroup {
+        width: 100%; /* Add this line to make sure the buttons take up the full width */
+    }
+
+    .historyheadingmobile{
+        font-size: 18px;
+    }
+
+    .mainparamobile{
+        font-size: 14px;
+    }
+}

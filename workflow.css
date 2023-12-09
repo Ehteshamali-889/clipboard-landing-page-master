@@ -1,0 +1,136 @@
+.workflow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.workflowheading{
+    font-size: 28px;
+    margin-bottom:1%;
+    color: #505559;
+}
+
+.workflowpara{
+    color: #D4D5D7;
+    font-weight: 600;
+    line-height: 1.6rem;
+    font-size: 14px;
+}
+
+.steps{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.steps-image{
+    margin-bottom: 5%;
+}
+
+.stepheading{
+    margin-bottom: 5%;
+    color: #505559;
+}
+
+.steppara{
+    color: #D4D5D7;
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
+.singlestep{
+    height: 5vh;
+}
+.singlesteps{
+    height: 3.2vh;
+}
+
+
+.imagesgallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20%;
+    /* height: 20vh; */
+    gap: 8%;
+}
+
+.clipboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.clipheading{
+    margin-bottom: 1%;
+    color: #505559;
+}
+
+.clipara{
+    color: #D4D5D7;
+    font-weight: 600;
+    line-height: 1.6rem;
+    margin-bottom: 2%;
+}
+
+
+@media (max-width:500px) {
+    .steps{
+        flex-direction: column;
+    }
+
+    .singlestep{
+        height: 23vh;
+        margin-bottom: 15%;
+    }
+    .singlesteps{
+        height: 21.2vh;
+        margin-bottom: 10%;
+    }
+
+    .workflowheading{
+        width: 60%;
+    }
+    
+    .workflowpara{
+        width: 70%;
+    }
+
+    .imagesgallery{
+        flex-direction: column;
+    }
+
+    .logo-gallery{
+        margin-bottom: 20%;
+    }
+
+    .clipheading{
+        width: 70%;
+    }
+    
+    .clipara{
+        width: 90%;
+    }
+}
+
+@media (max-width:350px) {
+
+    .singlestep{
+        margin-bottom: 25%;
+    }
+    .singlesteps{
+        margin-bottom: 20%;
+    }
+}
